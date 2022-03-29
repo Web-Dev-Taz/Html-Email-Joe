@@ -9,24 +9,105 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>HTML EMAIL TEMPLATE</title>
+    <style>
+        /* Desktop */
+        @media only screen and (min-width: 960px) {
+            .container {
+                width: 960px;
+            }
+
+            .one-solution-table {
+                text-align: center;
+            }
+
+            .one-solution-table img {
+                max-width: 611px;
+            }
+        }
+
+        /* Tablet */
+        @media only screen and (max-width: 960px) {
+            .container {
+                width: 600px;
+            }
+        }
+
+        /* Mobile */
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100%;
+            }
+
+            .header-left {
+                width: 100%;
+            }
+
+            .header-right {
+                width: 100%;
+            }
+
+            .lets-you-row .left-column {
+                width: 50%;
+            }
+
+            .lets-you-row .middle-column {
+                width: 50%;
+            }
+
+            .lets-you-row .right-column {
+                width: 100%;
+                margin-top: 35px;
+            }
+
+            .advanced-table .image-head {
+                width: 100%;
+            }
+
+            .advanced-table {
+                text-align: center;
+            }
+
+            .advanced-table .left-column .left-p {
+                text-align: center;
+            }
+
+            .advanced-table .left-column {
+                width: 100%;
+            }
+
+            .advanced-table .right-column {
+                width: 100%;
+            }
+
+            .advanced-table .left-column .left-store {
+                width: 100%;
+                text-align: center;
+            }
+
+            .advanced-table .right-column .right-store {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 
 <body style="background-color: black;">
     <!-- ⬇️ Start of Html Email (first OG container table / entire page) ⬇️ -->
-    <table class="OGcontainer" width="100%" border="0" style="box-sizing: border-box;" cellspacing="0" cellpadding="0">
+    <table width="100%" border="0" align="center" cellspacing="0" cellpadding="0">
         <tr>
             <td>
                 <!-- ⬇️ Start of 600 maxwidth container table (for all rows) ⬇️ -->
-                <table class="600maxwidthcontainer" width="600px" align="center" border="0" cellspacing="0" cellpadding="0">
+                <table class="container" width="600px" align="center" border="0" cellspacing="0" cellpadding="0">
                     <!-- ⬇️ Start of Header ⬇️ -->
                     <tr>
                         <td style="background-color: white;">
                             <!-- ⬇️ Start of Header Left Side ⬇️ -->
-                            <table class="header-left-side" width="50%" align="left" border="0" cellspacing="0" cellpadding="0" style="background: #a55c6c;
+                            <table class="header-left" width="50%" align="left" border="0" cellspacing="0" cellpadding="0" style="background: #a55c6c;
                                 background: -moz-linear-gradient(-45deg, #a55c6c 0%, #6d0019 100%); 
                                 background: -webkit-linear-gradient(-45deg, #a55c6c 0%,#6d0019 100%);
-                                background: linear-gradient(135deg, #a55c6c 0%,#6d0019 100%); padding: 17px 17px 70px 23px;">
+                                background: linear-gradient(135deg, #a55c6c 0%,#6d0019 100%); padding: 36px 17px 70px 23px;">
                                 <tr>
                                     <td style="font-family: 'Open Sans', ' Helvetica Neue' , Helvetica, Arial, 'Lucida Grande' ,
                             sans-serif; color: white;">
@@ -50,11 +131,11 @@
                             <!-- ⬆️ End of Header Left Side ⬆️ -->
                             <!-- --------------------------------------------------------------------------- -->
                             <!-- ⬇️ Start of Header Right Side ⬇️ -->
-                            <table class="header-right-side" width="50%" align="right" border="0" cellspacing="0" cellpadding="0">
+                            <table class="header-right" width="50%" align="right" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
                                     <td style="font-family: 'Open Sans', ' Helvetica Neue' , Helvetica, Arial, 'Lucida Grande' ,
-                                     sans-serif; color: #7d7d7d;">
-                                        <table class="about-careers-contact" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="padding: 20px;">
+                                    sans-serif; color: #7d7d7d;">
+                                        <table class="menu-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="padding: 20px;">
                                             <tr>
                                                 <td align="center">
                                                     <a href="#" style="font-size: 14px; font-weight: 600; text-decoration: none; color: #7d7d7d;">About</a>
@@ -84,12 +165,12 @@
 
                     <!-- ⬇️ Start of (Let's You) Row Two ⬇️ -->
                     <tr>
-                        <td style="background-color: #fafafa; padding: 60px 50px 90px;">
+                        <td class="lets-you-row" style="background-color: #fafafa; padding: 60px 50px 90px;">
                             <h3 style=" font-family: 'Open Sans' , ' Helvetica Neue' , Helvetica,
                             Arial, 'Lucida Grande' , sans-serif; color: #333333; font-weight: 300; font-size: 25px;" align="center">
                                 Hero Product Let's You...</h3>
                             <!-- ⬇️ Start of Left Column of Row Two ⬇️ -->
-                            <table width="33.33%" align="left" border="0" cellspacing="0" cellpadding="0">
+                            <table class="left-column" width="33.33%" align="left" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
                                     <td>
                                         <table class="title-icon" width="33.33%" align="left" border="0" cellspacing="0" cellpadding="0">
@@ -120,7 +201,7 @@
                             </table>
                             <!-- ⬆️ End of Left Column of Row Two ⬆️ -->
                             <!-- ⬇️ Start of Center Column of Row Two ⬇️ -->
-                            <table width="33.33%" align="left" border="0" cellspacing="0" cellpadding="0">
+                            <table class="middle-column" width="33.33%" align="left" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
                                     <td>
                                         <table class="title-icon" width="33.33%" align="left" border="0" cellspacing="0" cellpadding="0">
@@ -151,7 +232,7 @@
                             </table>
                             <!-- ⬆️ End of Center Column of Row Two ⬆️ -->
                             <!-- ⬇️ Start of Right Column of Row Two ⬇️ -->
-                            <table width="33.33%" align="left" border="0" cellspacing="0" cellpadding="0">
+                            <table class="right-column" width="33.33%" align="left" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
                                     <td>
                                         <table class="title-icon" width="33.33%" align="left" border="0" cellspacing="0" cellpadding="0">
@@ -189,11 +270,11 @@
 
                     <!-- ⬇️ Start of Advanced Row ⬇️ -->
                     <tr>
-                        <td style="padding: 0 50px 50px; background-color: white;">
-                            <table class="advanced-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color: white;">
+                        <td>
+                            <table class="advanced-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="padding: 15px 15px 70px 15px; background-color: white;">
                                 <tr>
-                                    <td align="center" style="padding: 50px 0 10px;">
-                                        <img src="/images/image_head.jpg" alt="">
+                                    <td align="center" style="padding: 36px 30px 5px; background-color: white;">
+                                        <img class="image-head" src="/images/image_head.jpg" alt="">
                                     </td>
                                 </tr>
                                 <tr>
@@ -206,9 +287,9 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <table width="50%" align="left" border="0" cellspacing="0" cellpadding="0" style="padding: 5px 15px 30px 15px;">
+                                        <table class="left-column" width="50%" align="left" border="0" cellspacing="0" cellpadding="0" style="padding: 5px 15px 30px 15px;">
                                             <tr>
-                                                <td align="right">
+                                                <td align="right" class="left-p">
                                                     <p style="font-family: 'Open Sans', ' Helvetica Neue' , Helvetica, Arial, 'Lucida Grande' ,
                                                 sans-serif; color: #7F8887; font-weight: 400;
                                                 line-height: 1.8; font-size: 12px; padding: 0 10px 40px 20px;">Lorem
@@ -219,12 +300,12 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td align="right">
+                                                <td align="right" class="left-store">
                                                     <img src="/images/appstore.png" alt="">
                                                 </td>
                                             </tr>
                                         </table>
-                                        <table width="50%" align="left" border="0" cellspacing="0" cellpadding="0" style="padding: 5px 15px 30px 15px;">
+                                        <table class="right-column" width="50%" align="left" border="0" cellspacing="0" cellpadding="0" style="padding: 5px 15px 30px 15px;">
                                             <tr>
                                                 <td>
                                                     <p style="font-family: 'Open Sans', ' Helvetica Neue' , Helvetica, Arial, 'Lucida Grande' ,
@@ -236,7 +317,7 @@
                                                     </p>
                                                 </td>
                                             <tr>
-                                                <td>
+                                                <td class="right-store">
                                                     <img src="/images/playstore.png" alt="">
                                                 </td>
                                             </tr>
@@ -255,7 +336,7 @@
                         <td>
                             <table class="one-solution-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color: #141414;">
                                 <tr>
-                                    <td style="padding: 70px 50px 70px;">
+                                    <td style="padding: 20px;">
                                         <img src="/images/one_app.jpg" alt="" width="100%">
                                     </td>
                                 </tr>
@@ -288,7 +369,8 @@
 
                                             <tr>
                                                 <td>
-                                                    <table class="column-table" width="33.33%" align="left" border="0" cellspacing="0" cellpadding="0" style="background-color: white; padding: 10px;">
+                                                    <table class="column-table-left" width="33.33%" align="left" border="0" cellspacing="0" cellpadding="0"
+                                                        style="background-color: white; padding: 10px;">
                                                         <tr align="center">
                                                             <td>
                                                                 <img src="/images/watch_screen.png" alt="">
@@ -317,7 +399,8 @@
                                                             </td>
                                                         </tr>
                                                     </table>
-                                                    <table class="column-table" width="33.33%" align="left" border="0" cellspacing="0" cellpadding="0" style="background-color: white; padding: 10px;">
+                                                    <table class="column-table-middle" width="33.33%" align="left" border="0" cellspacing="0" cellpadding="0"
+                                                        style="background-color: white; padding: 10px;">
                                                         <tr align="center">
                                                             <td>
                                                                 <img src="/images/watch_screen.png" alt="">
@@ -346,7 +429,8 @@
                                                             </td>
                                                         </tr>
                                                     </table>
-                                                    <table class="column-table" width="33.33%" align="left" border="0" cellspacing="0" cellpadding="0" style="background-color: white; padding: 10px;">
+                                                    <table class="column-table-right" width="33.33%" align="left" border="0" cellspacing="0" cellpadding="0"
+                                                        style="background-color: white; padding: 10px;">
                                                         <tr align="center">
                                                             <td>
                                                                 <img src="/images/watch_screen.png" alt="">
@@ -398,7 +482,7 @@
                                             <tr>
                                                 <td>
                                                     <!-- ⬇️ Start of Column Table 🧡 ⬇️ -->
-                                                    <table class="column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0" style="padding: 0 15px 20px;">
+                                                    <table class="left-column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0" style="padding: 0 15px 20px;">
                                                         <tr>
                                                             <td>
                                                                 <!-- ⬇️ Start of Icon Table 🍏 ⬇️ -->
@@ -425,7 +509,7 @@
                                                     </table>
                                                     <!-- ⬆️ End of Column Table 🧡 ⬆️ -->
                                                     <!-- ⬇️ Start of Column Table 🧡 ⬇️ -->
-                                                    <table class="column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0" style="padding: 0 15px 20px;">
+                                                    <table class="right-column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0" style="padding: 0 15px 20px;">
                                                         <tr>
                                                             <td>
                                                                 <!-- ⬇️ Start of Icon Table 🍏 ⬇️ -->
@@ -460,11 +544,11 @@
                                 <tr>
                                     <td>
                                         <!-- ⬇️ Start of Row One Table 🍎 ⬇️ -->
-                                        <table class="row-one-table" width="100%" align="left" border="0" cellspacing="0" cellpadding="0" style="background-color: #FAFAFA;">
+                                        <table class="row-two-table" width="100%" align="left" border="0" cellspacing="0" cellpadding="0" style="background-color: #FAFAFA;">
                                             <tr>
                                                 <td>
                                                     <!-- ⬇️ Start of Column Table 🧡 ⬇️ -->
-                                                    <table class="column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0" style="padding: 0 15px 20px;">
+                                                    <table class="left-column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0" style="padding: 0 15px 20px;">
                                                         <tr>
                                                             <td>
                                                                 <!-- ⬇️ Start of Icon Table 🍏 ⬇️ -->
@@ -491,7 +575,7 @@
                                                     </table>
                                                     <!-- ⬆️ End of Column Table 🧡 ⬆️ -->
                                                     <!-- ⬇️ Start of Column Table 🧡 ⬇️ -->
-                                                    <table class="column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0" style="padding: 0 15px 20px;">
+                                                    <table class="right-column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0" style="padding: 0 15px 20px;">
                                                         <tr>
                                                             <td>
                                                                 <!-- ⬇️ Start of Icon Table 🍏 ⬇️ -->
@@ -526,11 +610,11 @@
                                 <tr>
                                     <td>
                                         <!-- ⬇️ Start of Row One Table 🍎 ⬇️ -->
-                                        <table class="row-one-table" width="100%" align="left" border="0" cellspacing="0" cellpadding="0" style="background-color: #FAFAFA;">
+                                        <table class="row-three-table" width="100%" align="left" border="0" cellspacing="0" cellpadding="0" style="background-color: #FAFAFA;">
                                             <tr>
                                                 <td>
                                                     <!-- ⬇️ Start of Column Table 🧡 ⬇️ -->
-                                                    <table class="column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0" style="padding: 0 15px 20px;">
+                                                    <table class="left-column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0" style="padding: 0 15px 20px;">
                                                         <tr>
                                                             <td>
                                                                 <!-- ⬇️ Start of Icon Table 🍏 ⬇️ -->
@@ -557,7 +641,7 @@
                                                     </table>
                                                     <!-- ⬆️ End of Column Table 🧡 ⬆️ -->
                                                     <!-- ⬇️ Start of Column Table 🧡 ⬇️ -->
-                                                    <table class="column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0" style="padding: 0 15px 20px;">
+                                                    <table class="right-column-table" width="50%" align="left" border="0" cellspacing="0" cellpadding="0" style="padding: 0 15px 20px;">
                                                         <tr>
                                                             <td>
                                                                 <!-- ⬇️ Start of Icon Table 🍏 ⬇️ -->
