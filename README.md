@@ -1,4 +1,4 @@
-# Html-Email
+# Html Email
 
 Promotional Email
 Built with
